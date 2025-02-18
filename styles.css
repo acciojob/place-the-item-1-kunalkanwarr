@@ -1,2 +1,11 @@
+#holder {
+  display: flex;          /* Enable flexbox */
+  flex-wrap: wrap;        /* Allow items to wrap onto the next line */
+  justify-content: space-between; /* Ensure there's space between the items */
+  align-items: center;    /* Center items vertically in the container */
+}
 
-/* Your CSS Code here. */
+.item {
+  flex: 0 1 auto;         /* Allow items to shrink but not grow and take their natural width */
+  margin: 10px;           /* Add spacing between items */
+}
