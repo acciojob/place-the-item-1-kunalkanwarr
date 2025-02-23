@@ -1,6 +1,6 @@
 .holder {
     display: flex;
-    justify-content: space-around; /* Distribute items evenly */
+    justify-content: space-between; /* Distribute items evenly */
     width: 100%; /* Take full width of parent */
 }
 
