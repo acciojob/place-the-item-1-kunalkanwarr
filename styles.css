@@ -1,32 +1,27 @@
 .holder {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping */
-    width: 100%; /* Take full width of the parent */
+    justify-content: space-around; /* Distribute items evenly */
+    width: 100%; /* Take full width of parent */
 }
 
 .item {
-    width: calc(14.285% - 10px); /* Approximate width for 7 items with spacing, adjust accordingly */
-    height: 100px; /* Set a fixed height or adjust as needed */
-    margin: 5px; /* Add margin for spacing */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    width: 100px; /* Set the width of each item */
+    height: 100px; /* Set the height of each item */
+    text-align: center;
+    line-height: 100px; /* Vertically center the text */
 }
 
-/* Specific item positioning */
 .item:nth-child(1) {
-    order: 7; /* Move item 1 to the end of the row */
+    background-color: green; /* Set the background color of item 1 */
+    order: 1; /* Place item 1 at the beginning */
 }
 
 .item:nth-child(2) {
-    order: 8; /* Move item 2 to the next row, after item 7 */
-    width: calc(14.285% - 10px); /* Match width of other items */
+    background-color: red; /* Set the background color of item 2 */
+    order: 2; /* Place item 2 in the middle */
 }
 
 .item:nth-child(3) {
-    order: 1; /* Keep item 3 at the beginning */
+    background-color: blue; /* Set the background color of item 3 */
+    order: 3; /* Place item 3 at the end */
 }
-
-/* Reset order for remaining items */
-.item:nth-child(4) { order: 2; }
-.item:nth-child(5) { order: 3; }
-.item:nth-child(6) { order: 4; }
-.item:nth-child(7) { order: 5; }
